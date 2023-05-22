@@ -1,3 +1,4 @@
+from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters
 from middlewares.log import log_middleware
 from commands.offline import offline_handler
@@ -5,6 +6,7 @@ from commands.help import help_handler
 from commands.uptime import uptime_handler
 from dotenv import load_dotenv
 from os import getenv
+import json
 
 load_dotenv()
 
